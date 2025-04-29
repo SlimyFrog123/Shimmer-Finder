@@ -151,7 +151,7 @@ const jungleMap = {
         'medium': (num) => 6000 - 1008 * num,
         'large': (num) => 8000 - 1448 * num
     },
-    'right': { // Right jungle.
+    'right': {
         'small': (num) => 3276 + 524 * num,
         'medium': (num) => 4992 + 1008 * num,
         'large': (num) => 6552 + 1448 * num
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let loadingContent = document.getElementById('loadingContent');
     let mainContent = document.getElementById('mainContent');
     let form = document.getElementById('appForm');
-    let nameSelect = document.getElementById('nameSelect'); // Get the Guide name select element.
+    let nameSelect = document.getElementById('nameSelect');
     let resultElement = document.getElementById('shimmerLocation');
 
     function getGuideId() {
