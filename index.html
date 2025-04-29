@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraria Shimmer Finder</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link href="static/daisy.css" rel="stylesheet" type="text/css" />
+    <script src="static/tailwind.js"></script>
+</head>
+<body class="bg-base-200 p-8" data-theme="dark">
+    <form id="appForm" class="text-base-content">
+        <div id="loadingContent">
+            <p>Loading...</p>
+        </div>
+        
+        <div id="mainContent" class="hidden">
+            <p class="text-xl">What is the name of your Guide?</p>
+            <select id="nameSelect" class="select">
+                
+            </select><br><br>
+
+            <p class="text-xl">What is the size of your world?</p>
+            <input type="radio" name="world_size" id="smallWorld" class="radio radio-md" value="small" checked>
+            <label for="smallWorld">Small</label><br>
+            <input type="radio" name="world_size" id="mediumWorld" class="radio radio-md" value="medium">
+            <label for="mediumWorld">Medium</label><br>
+            <input type="radio" name="world_size" id="largeWorld" class="radio radio-md" value="large">
+            <label for="largeWorld">Large</label><br><br>
+
+            <p class="text-xl">What size of the world is the jungle on?</p>
+            <input type="radio" name="jungle_side" id="leftJungle" class="radio radio-md" value="left" checked>
+            <label for="leftJungle">Left</label><br>
+            <input type="radio" name="jungle_side" id="rightJungle" class="radio radio-md" value="right">
+            <label for="rightJungle">Right</label><br><br>
+
+            <p id="shimmerLocation" class="text-2xl"></p>
+        </div><br>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
